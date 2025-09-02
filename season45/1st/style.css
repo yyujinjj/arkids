@@ -23,12 +23,19 @@ header {
   margin-bottom: 30px;
 }
 .logo {
-  font-size: 0px;
-  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 6px;
+  font-family: "Poor+Story&", "Gowun Dodum", "Noto Sans KR", sans-serif;
+  font-weight: normal;
 }
+
 h1 {
-  margin: 0;
-  font-size: 28px;
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Poor+Story&", "Gowun Dodum", "Noto Sans KR", sans-serif;
 }
 .subtitle {
   color: #6b7280;
@@ -55,18 +62,24 @@ h1 {
   grid-template-columns: var(--num-col) 1fr;
   column-gap: 10px;
   align-items: start;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .num {
   justify-self: end;
-  font-weight: bold;
-  color: #2563eb;
+  font-size: 0.8em;
+  color: #1d4ed8;
+  margin-top: 2px;
   font-variant-numeric: tabular-nums;
   -webkit-font-feature-settings: "tnum";
           font-feature-settings: "tnum";
 }
 
+.text {
+  line-height: 2.0;
+  color: #111827;
+  font-size: 18px;
+}
 footer {
   text-align: center;
   color: #6b7280;
