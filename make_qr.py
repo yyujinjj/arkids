@@ -1,9 +1,16 @@
 import qrcode
 
-url = "https://yyujinjj.github.io/arkids/season45/1st/"
+season = 45  
 
-img = qrcode.make(url)
+num_sessions = 5
 
-img.save("season45_1st_qr.png")
+base_url = f"https://yyujinjj.github.io/arkids/season{season}/"
 
-print("QR 코드 저장 완료: season45_1st_qr.png")
+for i in range(1, num_sessions + 1):
+    session = f"{i}st" if i == 1 else f"{i}nd" if i == 2 else f"{i}rd" if i == 3 else f"{i}th"
+    url = f"{base_url}{session}/"
+
+    img = qrcode.make(url)
+    filename = f"season{season}_{session}_qr.png"
+    img.save(filename)
+    print(f"QR 코드 저장 완료: {filename} → {url}")
