@@ -1,0 +1,75 @@
+:root { --num-col: 3.0ch; }
+@media (max-width: 360px){
+  :root { --num-col: 2.6ch; }
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Serif KR", serif;
+  background: #f9fafb;
+  color: #1f2937;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-left: 40px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.logo {
+  font-size: 0px;
+  margin-bottom: 10px;
+}
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+.subtitle {
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+.chapter {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+}
+.chapter h2 {
+  margin-top: 20px;
+  font-size: 22px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+.verse {
+  display: grid;
+  grid-template-columns: var(--num-col) 1fr;
+  column-gap: 10px;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+.num {
+  justify-self: end;
+  font-weight: bold;
+  color: #2563eb;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-feature-settings: "tnum";
+          font-feature-settings: "tnum";
+}
+
+footer {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 30px;
+  font-size: 14px;
+}
