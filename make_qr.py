@@ -2,7 +2,7 @@ import qrcode
 from PIL import Image, ImageDraw, ImageFont
 
 season = 45  
-num_sessions = 5
+num_sessions = 15
 base_url = f"https://yyujinjj.github.io/arkids/season{season}/"
 
 font_path = "C:/Windows/Fonts/malgun.ttf"
