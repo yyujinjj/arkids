@@ -10,7 +10,7 @@ font = ImageFont.truetype(font_path, 20)
 
 for i in range(1, num_sessions + 1):
     session = f"{i}st" if i == 1 else f"{i}nd" if i == 2 else f"{i}rd" if i == 3 else f"{i}th"
-    label = f"{i}일차"
+    label = f"매말매기 시즌 45 초등부 - {i}일차"
     
     url = f"{base_url}{session}/"
     qr = qrcode.QRCode(version=1, box_size=10, border=4)
