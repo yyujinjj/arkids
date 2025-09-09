@@ -1,6 +1,6 @@
-:root { --num-col: 3.0ch; }
+:root { --num-col: 1.5ch; }
 @media (max-width: 360px){
-  :root { --num-col: 2.6ch; }
+  :root { --num-col: 2.4ch; }
 }
 
 body {
@@ -87,8 +87,9 @@ h2 {
   width: 100%;
   padding-bottom: 56.25%;
   overflow: hidden;
-  border-radius: 0;
-  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
 }
 .yt-wrap iframe {
   position: absolute;
