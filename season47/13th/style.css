@@ -1,7 +1,7 @@
 :root {
   --num-col: 1.8ch;
-  --bg-1: #f7e9d7;
-  --bg-2: #f3e6d9;
+  --bg-1: #fffaf0;
+  --bg-2: #fef9f3; 
   --paper: #fff8ee;
   --ink: #2d2d2d;
   --muted: #6b7280;
@@ -16,6 +16,13 @@
 }
 
 * { box-sizing: border-box; }
+
+@font-face {
+  font-family: 'OmuDaye';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   margin: 0;
@@ -41,21 +48,21 @@ header {
   position: relative;
 }
 .logo {
+  font-family: 'OmuDaye', sans-serif;
   font-size: 18px;
-  margin-bottom: 6px;
   color: var(--acorn);
-  font-family: "Poor Story", "Gowun Dodum", "Noto Sans KR", sans-serif;
-  letter-spacing: .5px;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
 }
 h1{
-  font-family: "Poor Story", "Gowun Dodum", "Noto Sans KR", sans-serif;
-  font-weight: 700;
+  font-family: 'OmuDaye', sans-serif;
+  font-weight: 500;
   color: #3a2a1a;
   margin: 10px 0 6px;
 }
 h1 {
-  font-size: 28px;
-  text-shadow: 0 2px 0 rgba(255,255,255,0.6);
+  font-size: 26px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
   position: relative;
   display: inline-block;
   padding: 6px 14px;
