@@ -1,7 +1,7 @@
 import qrcode
 from PIL import Image, ImageDraw, ImageFont
 
-season = 47  
+season = 48  
 num_sessions = 5
 base_url = f"https://yyujinjj.github.io/arkids/season{season}/"
 
