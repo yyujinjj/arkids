@@ -81,7 +81,7 @@ h2 {
   position: relative;
   display: inline-block;
   padding: 4px 10px 2px;
-  background: #fff3e0;
+  background: linear-gradient(180deg,#fff6e8,#ffeede);
   border-radius: 12px;
   margin-top: 0;
   font-size: 26px;
