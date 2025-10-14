@@ -6,7 +6,7 @@ start_session = 6
 end_session = 15
 base_url = f"https://yyujinjj.github.io/arkids/season{season}/"
 
-font_path = "C:/Windows/Fonts/malgun.ttf"
+font_path = "/System/Library/Fonts/AppleSDGothicNeo.ttc"
 font = ImageFont.truetype(font_path, 20)
 
 for i in range(start_session, end_session + 1):
