@@ -70,7 +70,7 @@ h1::after {
   transform: rotate(-10deg);
 }
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   position: relative;
   display: inline-block;
   padding: 4px 10px 2px;
