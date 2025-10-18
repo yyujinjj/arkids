@@ -54,7 +54,7 @@ h1{
   margin: 10px 0 6px;
 }
 h1 {
-  font-size: 28px;
+  font-size: 26px;
   text-shadow: 0 2px 0 rgba(255,255,255,0.6);
   position: relative;
   display: inline-block;
@@ -70,7 +70,7 @@ h1::after {
   transform: rotate(-10deg);
 }
 h2 {
-  font-size: 20px;
+  font-size: 24px;
   position: relative;
   display: inline-block;
   padding: 4px 10px 2px;
