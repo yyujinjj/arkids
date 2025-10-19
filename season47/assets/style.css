@@ -15,6 +15,7 @@
   :root { --num-col: 2.4ch; }
 }
 
+
 * { box-sizing: border-box; }
 
 body {
