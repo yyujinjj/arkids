@@ -65,7 +65,7 @@ h1 {
   box-shadow: 0 4px 0 rgba(139,94,52,0.15);
 }
 h1::after {
-  content: "🍂";
+  content: "";
   position: absolute;
   right: -18px; top: -12px;
   transform: rotate(-10deg);
@@ -75,8 +75,6 @@ h2 {
   position: relative;
   display: inline-block;
   padding: 4px 10px 2px;
-  /* background: #fff3e0; */
-  /* border-radius: 20px; */
   margin-top: 0;
   font-size: 26px;
   font-weight: 700;
@@ -120,10 +118,17 @@ h2 {
   border: 0;
 }
 
+.section-title {
+  text-align: center;
+  color: #4867bf;
+  font-size: 18px;
+  margin-top: -8px;
+}
+
 .verse {
   display: grid;
   grid-template-columns: var(--num-col) 1fr;
-  column-gap: 10px;
+  column-gap: 8px;
   align-items: start;
   margin-bottom: 12px;
 }
