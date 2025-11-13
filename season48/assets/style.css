@@ -1,20 +1,48 @@
 :root {
   --num-col: 1.8ch;
-  --bg-1: #f7e9d7;
-  --bg-2: #f3e6d9;
-  --paper: #fff8ee;
-  --ink: #2d2d2d;
-  --muted: #6b7280;
-  --leaf: #d97706;
-  --acorn: #8b5e34;
-  --sky: #ffd9a3;
-  --blue: #1d4ed8;
-  --shadow: rgba(139,94,52,0.10);
+  --bg-1: #e6f3ff;
+  --bg-2: #d9e7f5;
+  --paper: #f9fcff;
+  --ink: #102a43;
+  --muted: #64748b;
+  --leaf: #0f766e;
+  --acorn: #1e3a8a;
+  --sky: #bfdbfe;
+  --blue: #2563eb;
+  --shadow: rgba(15, 23, 42, 0.10);
 }
+
 @media (max-width: 360px){
   :root { --num-col: 2.4ch; }
 }
 
+@font-face {
+    font-family: 'IsYun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cafe24Surround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SchoolSafetyPictureDiary';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimGeurimilgiTTF-R.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GowoonDodum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
 
 * { box-sizing: border-box; }
 
@@ -41,63 +69,73 @@ header {
   margin-bottom: 28px;
   position: relative;
 }
+
 .logo {
   font-size: 18px;
   margin-bottom: 6px;
   color: var(--acorn);
-  font-family: "Poor Story", "Gowun Dodum", "Noto Sans KR", sans-serif;
+  font-family: 'IsYun', "Noto Sans KR", sans-serif;
+  font-weight: 600;
   letter-spacing: .5px;
 }
-h1{
-  font-family: "Poor Story", "Gowun Dodum", "Noto Sans KR", sans-serif;
-  font-weight: 700;
-  color: #3a2a1a;
-  margin: 10px 0 6px;
-}
+
 h1 {
-  font-size: 26px;
-  text-shadow: 0 2px 0 rgba(255,255,255,0.6);
+  font-family: "Cafe24Surround", "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #0f172a;
+  margin: 8px 0 6px;
+
   position: relative;
   display: inline-block;
-  padding: 6px 14px;
-  background: linear-gradient(180deg,#fff6e8,#ffeede);
-  border-radius: 14px;
-  box-shadow: 0 4px 0 rgba(139,94,52,0.15);
+
+  padding: 10px 22px;
+  border-radius: 999px;
+
+  background: linear-gradient(180deg, #f9fcff, #dbeafe);
+  box-shadow:
+    0 8px 0 rgba(148, 163, 184, 0.35),
+    0 10px 20px rgba(4, 20, 20, 0.12);
+
+  text-shadow: 0 1px 0 rgba(255,255,255,0.9);
 }
-h1::after {
-  content: "";
-  position: absolute;
-  right: -18px; top: -12px;
+
+h1::before {
+  left: -18px;
+  top: -8px;
   transform: rotate(-10deg);
 }
+
+h1::after {
+  right: -18px;
+  top: -10px;
+  transform: rotate(12deg);
+}
+
 h2 {
-  font-size: 24px;
+  font-family: "GowoonDodum", "Noto Sans KR", sans-serif;
   position: relative;
   display: inline-block;
   padding: 4px 10px 2px;
   margin-top: 0;
-  font-size: 26px;
-  font-weight: 700;
-  font-family: "Poor+Story&", "Gowun Dodum", "Noto Sans KR", sans-serif;
 }
 
 .subtitle {
-  color: #8c5f3c;
+  color: #1e3a8a;
   margin-top: 8px;
   font-family: "Gowun Dodum", "Noto Sans KR", sans-serif;
 }
 
 .chapter {
-  background: #fff;
+  background: var(--paper);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 16px rgba(15,23,42,0.10);
   margin-bottom: 20px;
 }
+
 .chapter h2 {
-  /* margin-top: 5px; */
-  font-size: 22px;
-  /* border-bottom: 1px solid #e5e7eb; */
+  font-size: 20px;
   margin-bottom: 12px;
 }
 
@@ -107,9 +145,10 @@ h2 {
   padding-bottom: 56.25%;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(15,23,42,0.12);
   margin-bottom: 20px;
 }
+
 .yt-wrap iframe {
   position: absolute;
   top: 0; left: 0;
@@ -119,10 +158,12 @@ h2 {
 }
 
 .section-title {
+  font-family: "GowoonDodum", "Noto Sans KR", sans-serif;
   text-align: center;
-  color: #4867bf;
+  color: var(--blue);
   font-size: 18px;
   margin-top: -8px;
+  font-weight: 400;
 }
 
 .verse {
@@ -134,9 +175,10 @@ h2 {
 }
 
 .num {
+  font-family: "GowoonDodum", "Noto Sans KR", sans-serif;
   justify-self: end;
   font-size: 1.0em;
-  color: #4867bf;
+  color: var(--blue);
   margin-top: 2px;
   font-variant-numeric: tabular-nums;
   -webkit-font-feature-settings: "tnum";
@@ -144,13 +186,16 @@ h2 {
 }
 
 .text {
+  font-family: "GowoonDodum", "Noto Sans KR", sans-serif;
+  font-weight: 500;
   line-height: 2.0;
-  color: #111827;
+  color: #0f172a;
   font-size: 18px;
 }
+
 footer {
   text-align: center;
-  color: #6b7280;
+  color: var(--muted);
   margin-top: 30px;
   font-size: 14px;
 }
