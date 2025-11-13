@@ -33,7 +33,7 @@
 @font-face {
     font-family: 'SchoolSafetyPictureDiary';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimGeurimilgiTTF-R.woff2') format('woff2');
-    font-weight: normal;
+    font-weight: 900;
     font-display: swap;
 }
 
@@ -41,6 +41,13 @@
     font-family: 'GowoonDodum';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
     font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TMoneyDungunbaram';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+    font-weight: 800;
     font-display: swap;
 }
 
@@ -75,13 +82,12 @@ header {
   margin-bottom: 6px;
   color: var(--acorn);
   font-family: 'IsYun', "Noto Sans KR", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: .5px;
 }
 
 h1 {
-  font-family: "Cafe24Surround", "Noto Sans KR", sans-serif;
-  font-weight: 900;
+  font-family: "SchoolSafetyPictureDiary", "Noto Sans KR", sans-serif;
   font-size: 22px;
   color: #0f172a;
   margin: 8px 0 6px;
