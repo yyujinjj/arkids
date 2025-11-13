@@ -44,13 +44,6 @@
     font-display: swap;
 }
 
-@font-face {
-  font-family: 'GyeonggiMillenniumTitle';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Title_Light.woff') format('woff');
-  font-weight: 300;
-  font-display: swap;
-}
-
 * { box-sizing: border-box; }
 
 body {
@@ -87,9 +80,9 @@ header {
 }
 
 h1 {
-  font-family: "GyeonggiMillenniumTitle", "Noto Sans KR", sans-serif;
+  font-family: "Cafe24Surround", "Noto Sans KR", sans-serif;
   font-weight: 900;
-  font-size: 21px;
+  font-size: 22px;
   color: #0f172a;
   margin: 8px 0 6px;
 
